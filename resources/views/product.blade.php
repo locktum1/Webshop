@@ -23,7 +23,6 @@
                 <h1>Product name</h1>
                 <h2>Product description</h2>
                 <h2>Product price</h2>
-                <h3>TESTING IF I CAN PUSH</h3>
             </div>
         </main>
         <footer>By Elliot</footer>
