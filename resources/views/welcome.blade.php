@@ -13,75 +13,74 @@
             <x-header></x-header>
         </header>
         <div class="intro">
-            <div class="introPushStart"></div>
             <h1>Welcome to <span class="bold">Webshop</span></h1>
             <h2>The world's first anime-exclusive mousepad shop!</h2>
             <img class="downArrow" id="left" src="{{ asset('assets/arrow-down-s-fill.svg') }}" alt="Side bar">
         </div>
         <main>
-            <div class="productSection">
+            <a href="{{ route('product') }}" class="productSection">
                 <img src="{{ asset('assets/Luffy-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Luffy Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}" class="productSection">
                 <img src="{{ asset('assets/Zoro2-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Zoro Mouse Pad</h1>
                     <h2>£24.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}" class="productSection">
                 <img src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Demon Slayer Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}" class="productSection">
                 <img src="{{ asset('assets/Zoro2-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Zoro Mouse Pad</h1>
                     <h2>£24.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}" class="productSection">
                 <img src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Demon Slayer Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}"class="productSection">
                 <img src="{{ asset('assets/Luffy-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Luffy Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}"class="productSection">
                 <img src="{{ asset('assets/Luffy-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Luffy Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}"class="productSection">
                 <img src="{{ asset('assets/Zoro2-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Zoro Mouse Pad</h1>
                     <h2>£24.99</h2>
                 </div>
-            </div>
-            <div class="productSection">
+            </a>
+            <a href="{{ route('product') }}"class="productSection">
                 <img src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" alt="">
                 <div class="sectionText">
                     <h1>Demon Slayer Mouse Pad</h1>
                     <h2>£19.99</h2>
                 </div>
-            </div>
+            </a>
         </div>
         </main>
         <footer><h1>By Elliot :D</h1></footer>
@@ -100,6 +99,8 @@
             element.classList.add('show')
         }
     })
+
+    
 </script>
 </html>
 

@@ -18,6 +18,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('/fonts/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @keyframes animatedIntroGradient {
     0% {
@@ -45,12 +51,30 @@ a
 body
 {
     display: grid;
-    grid-template-columns: 15vw 1fr 15vw;
     grid-template-rows: 1fr;
     height: 100vh;
     text-align: center;
     font-family: "UNCAGE-Regular";
     margin: 0;
+}
+
+@media (min-width: 1100px) {
+    body
+    {
+        grid-template-columns: 15vw 1fr 15vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    body
+    {
+        grid-template-columns: 0 1fr 0;
+    }
+}
+
+img
+{
+    -webkit-user-select: none;
 }
 
 #index>.bg
@@ -91,7 +115,7 @@ header>.title>h1
 {
     grid-row: 1;
     grid-column: 2;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-family: "UNCAGE-Medium";
 }
 
@@ -99,7 +123,7 @@ header>h2
 {
     grid-row: 1;
     grid-column: 3;
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 img
@@ -113,22 +137,18 @@ img
 #index>.bg>.intro
 {
     grid-row: 2;
-}
-
-#index>.bg>.introPushStart
-{
-    margin-top: 45vh;
+    margin-top: 40vh;
 }
 
 #index>.bg>.intro>h1
 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin: 0;
 }
 
 #index>.bg>.intro>h2
 {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     margin: 0;
     background: linear-gradient(to bottom right, #00ff26, #0080ff, #9500ff);
     -webkit-background-clip: text;
@@ -197,7 +217,7 @@ img
     flex-direction: column;
 }
 
-.productSection>img
+.productSection img
 {
     object-fit: contain;
     background-color: #ebebeba8;
@@ -211,17 +231,17 @@ img
 
 .sectionText>h1
 {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .sectionText>h2
 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
-#index>.bg>footer
+#index footer
 {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 4;
 }
 
@@ -241,10 +261,11 @@ img
 #product>.bg
 {
     display: grid;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto auto 1fr auto;
     grid-template-columns: 1fr;
     grid-column: 2;
-    background-color: whitesmoke
+    background-color: whitesmoke;
+    font-family: "WorkSans";
 }
 
 #product #back-button
@@ -253,6 +274,8 @@ img
     grid-row: 2;
     text-align: left;
     align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #product main
@@ -267,24 +290,30 @@ img
 
 #product .product-image
 {
+    display: flex;
     grid-column: 1;
     width: 100%;
-    height: fit-content;
+    height: min-content;
     background-color: rgba(213, 213, 213, 0.689);
     border-radius: 2%;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 #product .product-image *
 {
     width: 80%;
-    align-self: center;
+    height: auto;
+    aspect-ratio: 16/11;
 }
 
 #product .product-info
 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    height: 100%;
 }
 
 #product .product-info *
@@ -292,10 +321,168 @@ img
     text-align: left;
 }
 
+#product .product-title
+{
+    font-family: "WorkSans-Bold";
+    font-size: 2em;
+    margin: 0;
+}
+
+#product .product-desc
+{
+    font-size: 1.5em;
+}
+
+#product .product-price
+{
+    font-size: 1.7em;
+    font-family: "WorkSans-Bold";
+}
+
+#product .product-buttons
+{
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#product .product-buttons div
+{
+    width: 95%;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0.5rem;
+    text-align: center;
+    justify-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#product .product-button *
+{
+    font-size: 1.4rem;
+    font-family: "WorkSans-Bold";
+}
+
+#product #cart
+{
+    background: linear-gradient(to top right, #0080ff, #00ffe1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#product #save
+{
+    background: linear-gradient(to bottom right, #0080ff, #00ffe1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#product .buy-button
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 97.5%;
+    align-self: center;
+}
+
+#product #buy
+{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#product #buy *
+{
+    font-size: 1.4em;
+    font-family: "WorkSans-Bold";
+    background: linear-gradient(to top right, #00ff6e, #2b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1100px) {
+    #product .product-title
+{
+    font-size: 3vw;
+    margin: 0;
+}
+
+#product .product-desc
+{
+    font-size: 2.4vw;
+}
+
+#product .product-price
+{
+    font-size: 3vw;
+    margin: 0;
+}
+
+#product .product-button *
+{
+    font-size: 2vw;
+}
+
+#product #buy *
+{
+    font-size: 2vw;
+    font-family: "WorkSans-Bold";
+    background: linear-gradient(to top right, #00ff6e, #2b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#product .product-main
+{
+    grid-row: 5;
+    white-space: pre-line;
+    text-align: left;
+    font-size: 2vw;
+}
+}
+
+#product .product-spill
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    overflow-x: scroll;
+    grid-row: 4;
+}
+
+#product .product-spill-image
+{
+    display: flex;
+    background-color: white;
+    border-radius: 0.5rem;
+    min-width: 15%;
+    height: auto;
+    justify-content: center;
+    padding: 5px;
+}
+
+#product .product-spill-image:hover
+{
+    cursor: pointer;
+}
+
+#product .product-main
+{
+    grid-row: 5;
+    white-space: pre-line;
+    text-align: left;
+}
+
 #product footer
 {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 
@@ -312,7 +499,7 @@ img
 
 #auth>.bg>.intro *
 {
-    font-size: 3rem;
+    font-size: 3em;
     font-family: "WorkSans";
 }
 
@@ -348,7 +535,7 @@ img
 #auth input
 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-top: 1%;
     margin-bottom: 0;
     padding: 0;
@@ -356,7 +543,7 @@ img
 
 #auth h2
 {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 0;
     text-align: left;
     align-self: flex-start;
@@ -367,7 +554,7 @@ img
 {
     width: 100%;
     height: fit-content;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     border: 0;
     border-radius: 5px;
     margin-bottom: 2%;
@@ -410,7 +597,7 @@ img
 
 #auth #registerLabel
 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 #auth #register
@@ -429,7 +616,7 @@ img
     border-radius: 5px;
     background-color: rgb(96,96,96,96);
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 /*Register page*/
@@ -445,7 +632,7 @@ img
 
 #register>.bg>.intro *
 {
-    font-size: 3rem;
+    font-size: 3em;
     font-family: "WorkSans";
 }
 
@@ -481,7 +668,7 @@ img
 #register .registerInput
 {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-top: 2%;
     margin-bottom: 0;
     padding: 0;
@@ -494,7 +681,7 @@ img
 
 #register h2
 {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 0;
     text-align: left;
     align-self: flex-start;
@@ -505,7 +692,7 @@ img
 {
     align-self: flex-start;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 #checkbox > input
@@ -523,7 +710,7 @@ img
 {
     width: 100%;
     height: fit-content;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     border: 0;
     border-radius: 5px;
     margin-bottom: 2%;
@@ -535,7 +722,7 @@ img
     margin-top: 5%;
     background: linear-gradient(to bottom right, #a4a4a4, #292929);
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 #signInWithFacebook
@@ -567,7 +754,7 @@ img
 
 #register #signInText
 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 #register #signInButton
@@ -576,7 +763,7 @@ img
     color: white;
     border: 0;
     margin-bottom: 0;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 #register #signInLink
@@ -587,7 +774,7 @@ img
     border-radius: 5px;
     background-color: rgb(96,96,96,96);
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 /*PRIVACY POLICY PAGE*/
@@ -603,7 +790,7 @@ img
 
 #privacyPolicy>.bg>.intro *
 {
-    font-size: 3rem;
+    font-size: 3em;
     font-family: "WorkSans";
 }
 
