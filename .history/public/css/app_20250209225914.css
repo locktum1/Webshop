@@ -72,6 +72,8 @@ body
     }
 }
 
+<<<<<<< HEAD
+=======
 @media (min-width: 2160px) {
     body
     {
@@ -79,6 +81,7 @@ body
     }
 }
 
+>>>>>>> 213570b (Added greater support for mobile devices)
 img
 {
     -webkit-user-select: none;
