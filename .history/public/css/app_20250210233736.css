@@ -512,25 +512,6 @@ img
 
 /*AUTH PAGE*/
 
-#auth>.bg
-{
-    display: grid;
-    grid-template-rows: auto 0.95fr auto;
-    grid-template-columns: 1fr;
-    grid-column: 2;
-    background-color: whitesmoke;
-}
-
-main
-{
-
-}
-
-.pageTitle
-{
-    font-size: 2em;
-
-}
 
 
 /*Register page*/

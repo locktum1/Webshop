@@ -13,10 +13,8 @@
             <x-header></x-header>
         </header>
         <main>
-            <h1 class="pageTitle">Log in</h1>
             <form action="">
-                <label for="email">Email address:</label>
-                <input name="email" type="text" placeholder="example@example.com">
+                <input type="text" placeholder="">
             </form>
         </main>
         <footer>By Elliot</footer>

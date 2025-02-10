@@ -12,12 +12,25 @@
         <header>
             <x-header></x-header>
         </header>
+        <div class="intro">
+            <h1>Log in</h1>
+        </div>
         <main>
-            <h1 class="pageTitle">Log in</h1>
-            <form action="">
-                <label for="email">Email address:</label>
-                <input name="email" type="text" placeholder="example@example.com">
+            <form action="{{ route('auth.submit') }}" method="POST">
+                @csrf
+
+                <h2>Email:</h2>
+                <input type="text" placeholder="example@example.com" required>
+                <h2>Password:</h2>
+                <input type="password" required>
+                <button type="submit" id="signIn">Sign in</button>
             </form>
+            <button id="signInWithFacebook">Log in with Facebook</button>
+            <button id="signInWithGoogle">Log in with Google</button>
+            <div class="registerContainer">
+                <h2 id="registerLabel">New to Webshop? Make an account:</h2>
+                <a id="registerLink" href="{{ route('register') }}"><button id="register">Register</button></a>
+            </div>
         </main>
         <footer>By Elliot</footer>
     </div>
