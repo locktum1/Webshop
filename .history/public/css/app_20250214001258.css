@@ -736,25 +736,17 @@ img
         width: 4em;
     }
 
-    .registerInput label
+    .authInput label
     {
+        margin-top: 5px;
         font-size: 0.9em;
     }
 
-    .registerInput input
-    {
-        font-size: 1em;
-    }
-
-    .registerCheckbox *
-    {
-        font-size: 0.9em;
-    }
-
-    #register button
-    {
-        font-size: 1em;
-    }
+    .authInput input
+{
+    color: black;
+    font-size: 1em;
+}
 
 }
 

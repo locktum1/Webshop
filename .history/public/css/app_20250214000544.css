@@ -716,46 +716,18 @@ img
     border: 2px rgba(215, 215, 215, 0.552) solid;
 }
 
-@media (max-width: 1100px)
-{
+@media (max-width: 1100px) {
     #register main
     {
         width: 350px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px)
-{
-    header h1
+@media (min-width: 1700px) {
+    #register main
     {
-        font-size: 30px !important;
+        width: 4450px;
     }
-
-    header>#left, header>#right
-    {
-        width: 4em;
-    }
-
-    .registerInput label
-    {
-        font-size: 0.9em;
-    }
-
-    .registerInput input
-    {
-        font-size: 1em;
-    }
-
-    .registerCheckbox *
-    {
-        font-size: 0.9em;
-    }
-
-    #register button
-    {
-        font-size: 1em;
-    }
-
 }
 
 #registerForm

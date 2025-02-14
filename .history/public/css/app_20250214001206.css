@@ -736,26 +736,7 @@ img
         width: 4em;
     }
 
-    .registerInput label
-    {
-        font-size: 0.9em;
-    }
-
-    .registerInput input
-    {
-        font-size: 1em;
-    }
-
-    .registerCheckbox *
-    {
-        font-size: 0.9em;
-    }
-
-    #register button
-    {
-        font-size: 1em;
-    }
-
+    
 }
 
 #registerForm

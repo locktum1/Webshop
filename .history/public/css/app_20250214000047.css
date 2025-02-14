@@ -42,10 +42,10 @@
     }
 }
 
-/* *
+*
 {
     outline: 1px solid red;
-} */
+}
 
 a
 {
@@ -565,7 +565,7 @@ img
 @media (max-width: 1100px) {
     #auth main
     {
-        width: 350px;
+        width: 500px;
     }
 }
 
@@ -697,8 +697,8 @@ img
 {
     display: grid;
     grid-template-rows: auto 0.95fr auto;
-    grid-template-columns: 100vw;
-    grid-column: 1;
+    grid-template-columns: 1fr;
+    grid-column: 2;
     background-color: whitesmoke;
 }
 
@@ -714,48 +714,6 @@ img
     background-color: rgb(231, 231, 231);
     border-radius: 10px;
     border: 2px rgba(215, 215, 215, 0.552) solid;
-}
-
-@media (max-width: 1100px)
-{
-    #register main
-    {
-        width: 350px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px)
-{
-    header h1
-    {
-        font-size: 30px !important;
-    }
-
-    header>#left, header>#right
-    {
-        width: 4em;
-    }
-
-    .registerInput label
-    {
-        font-size: 0.9em;
-    }
-
-    .registerInput input
-    {
-        font-size: 1em;
-    }
-
-    .registerCheckbox *
-    {
-        font-size: 0.9em;
-    }
-
-    #register button
-    {
-        font-size: 1em;
-    }
-
 }
 
 #registerForm

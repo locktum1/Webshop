@@ -753,7 +753,19 @@ img
 
     #register button
     {
-        font-size: 1em;
+    box-sizing: border-box;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: rgb(55, 55, 55);
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px black solid;
     }
 
 }

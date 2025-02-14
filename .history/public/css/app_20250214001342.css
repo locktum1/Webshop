@@ -738,23 +738,21 @@ img
 
     .registerInput label
     {
+        margin-top: 5px;
         font-size: 0.9em;
     }
 
     .registerInput input
     {
+        color: black;
         font-size: 1em;
     }
 
     .registerCheckbox *
-    {
-        font-size: 0.9em;
-    }
-
-    #register button
-    {
-        font-size: 1em;
-    }
+{
+    font-family: "WorkSans";
+    font-size: 0.9em;
+}
 
 }
 
