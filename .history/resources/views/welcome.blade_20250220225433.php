@@ -16,10 +16,10 @@
         <div class="side-bar">
             <ul>
                 <li>
-                    Search
+                    Option 1
                 </li>
                 <li>
-                    Browse
+                    Option 1
                 </li>
             </ul>
         </div>

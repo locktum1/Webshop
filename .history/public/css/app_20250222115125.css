@@ -113,15 +113,11 @@ img
 
 header
 {
-    position: sticky;
-    top: 0;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 25% auto 25%;
     grid-column: 1;
     grid-row: 1;
-    z-index: 2;
-    background-color: whitesmoke;
 }
 
 #left
@@ -218,27 +214,18 @@ header>h2
     width: 200px;
     height: 100%;
     background-color: whitesmoke;
-    text-align: left;
-    padding: 0;
-    z-index: 1;
+    border: 1px rgba(128, 128, 128, 0.364) solid;
 }
 
-.side-bar ul
+.side-bar *
 {
-    margin-top: 75px;
-    padding-left: 5px !important;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(0,1fr));
-    gap: 10px;
     list-style: none;
 }
 
-.side-bar > ul *
+.side-bar .btn
 {
-    font-family: "WorkSans";
-    font-size: 25px;
+    width: 3rem;
+    justify-self: center;
 }
 
 

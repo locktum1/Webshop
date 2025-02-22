@@ -19,7 +19,7 @@
                     Search
                 </li>
                 <li>
-                    Browse
+                    Option 2
                 </li>
             </ul>
         </div>

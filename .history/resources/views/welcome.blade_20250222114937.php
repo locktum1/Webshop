@@ -15,11 +15,14 @@
         </header>
         <div class="side-bar">
             <ul>
-                <li>
-                    Search
+                <li class="">
+                    <a class="icon" id="left" href="{{ route('index') }}"><img src="{{ asset('assets/side-bar.svg') }}" alt="Side bar"></a>
                 </li>
                 <li>
-                    Browse
+                    Option 1
+                </li>
+                <li>
+                    Option 2
                 </li>
             </ul>
         </div>

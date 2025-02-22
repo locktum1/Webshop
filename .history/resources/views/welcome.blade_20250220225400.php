@@ -14,14 +14,7 @@
             <x-header></x-header>
         </header>
         <div class="side-bar">
-            <ul>
-                <li>
-                    Search
-                </li>
-                <li>
-                    Browse
-                </li>
-            </ul>
+
         </div>
         <div class="intro">
             <h1>Welcome to <span class="bold">Webshop</span></h1>

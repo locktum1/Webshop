@@ -226,19 +226,13 @@ header>h2
 .side-bar ul
 {
     margin-top: 75px;
-    padding-left: 5px !important;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(0,1fr));
-    gap: 10px;
-    list-style: none;
 }
 
 .side-bar > ul *
 {
-    font-family: "WorkSans";
-    font-size: 25px;
+    list-style: none;
+    padding-left: 5px;
 }
 
 

@@ -14,14 +14,14 @@
             <x-header></x-header>
         </header>
         <div class="side-bar">
-            <ul>
+            <ol>
                 <li>
-                    Search
+                    Option 1
                 </li>
                 <li>
-                    Browse
+                    Option 2
                 </li>
-            </ul>
+            </ol>
         </div>
         <div class="intro">
             <h1>Welcome to <span class="bold">Webshop</span></h1>

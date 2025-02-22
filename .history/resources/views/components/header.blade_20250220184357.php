@@ -15,6 +15,6 @@
 
 @auth
     <div class="cart">
-        <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="icon" id="right" href="#"><img src="{{ asset('assets/cart-line-icon.svg') }}" alt="Log in or register"></a>
+        <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="icon" id="right" href="#"><img src="{{ asset('assets/cart-line-.svg') }}" alt="Log in or register"></a>
     </div>
 @endauth
