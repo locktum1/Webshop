@@ -24,6 +24,33 @@
     font-weight: normal;
     font-style: normal;
 }
+<<<<<<< HEAD
+=======
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('/fonts/Roboto/static/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/fonts/Roboto/static/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/fonts/Roboto/static/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('/fonts/Roboto/static/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 
 @keyframes animatedIntroGradient {
     0% {
@@ -61,6 +88,11 @@
 html, body
 {
     width: 100vw !important;
+<<<<<<< HEAD
+=======
+    overflow-x: hidden;
+
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 a
@@ -88,21 +120,33 @@ body
 @media (min-width: 1100px) {
     body
     {
+<<<<<<< HEAD
         grid-template-columns: 15vw 1fr 15vw;
+=======
+        grid-template-columns: 15vw 1fr 15vw !important;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     }
 }
 
 @media (max-width: 1150px) {
     body
     {
+<<<<<<< HEAD
         grid-template-columns: 100vw;
+=======
+        grid-template-columns: 100vw !important;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     }
 }
 
 @media (min-width: 2160px) {
     body
     {
+<<<<<<< HEAD
         grid-template-columns: auto 1280px auto;
+=======
+        grid-template-columns: auto 1280px auto !important;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     }
 }
 
@@ -115,7 +159,11 @@ img
 {
     display: grid;
     grid-template-rows: auto 100vh auto auto;
+<<<<<<< HEAD
     grid-template-columns: 1fr;
+=======
+    grid-template-columns: 100% !important;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     grid-column: 2;
     background-color: whitesmoke
 }
@@ -410,7 +458,11 @@ header>h2
 
 #index footer
 {
+<<<<<<< HEAD
     grid-column: 2;
+=======
+    grid-column: 1;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     grid-row: 4;
 }
 
@@ -422,9 +474,15 @@ header>h2
     }
 
     .sectionText
+<<<<<<< HEAD
 {
     text-align: center;
 }
+=======
+    {
+        text-align: center;
+    }
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 /*SEARCH PAGE*/
@@ -462,10 +520,18 @@ header>h2
 
 #search input
 {
+<<<<<<< HEAD
     width: 75%;
     height: 50px;
     border: rgba(128, 128, 128, 0.305) 0.5px solid;
     border-radius: 10px;
+=======
+    width: 95%;
+    height: 50px;
+    border: rgba(128, 128, 128, 0.305) 0.5px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     font-size: 20px;
 }
 
@@ -495,7 +561,11 @@ header>h2
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.1s ease-in-out;
+<<<<<<< HEAD
     gap: 1rem;
+=======
+    gap: 10px;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     font-family: "WorkSans";
 }
 
@@ -541,6 +611,11 @@ header>h2
     grid-column: 2;
     background-color: whitesmoke;
     font-family: "WorkSans";
+<<<<<<< HEAD
+=======
+    padding-left: 10px;
+    padding-right: 10px;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 @media (max-width: 1150px) {
@@ -566,8 +641,13 @@ header>h2
     grid-template-columns: 1fr 1fr;
     grid-column: 1;
     grid-row: 3;
+<<<<<<< HEAD
     gap: 1rem;
     font-family: "WorkSans";
+=======
+    gap: 2rem;
+    font-family: "Roboto-Light";
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 #product .product-image
@@ -576,18 +656,28 @@ header>h2
     grid-column: 1;
     width: 100%;
     height: min-content;
+<<<<<<< HEAD
     background-color: rgba(213, 213, 213, 0.689);
     border-radius: 2%;
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: center;
+=======
+    padding: 0;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 #product .product-image *
 {
+<<<<<<< HEAD
     width: 80%;
     height: auto;
     aspect-ratio: 16/11;
+=======
+    width: 100%;
+    aspect-ratio: 16/11;
+    padding: 0;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 #product .product-info
@@ -606,6 +696,7 @@ header>h2
 #product .product-title
 {
     font-family: "WorkSans-Bold";
+<<<<<<< HEAD
     font-size: 2em;
     margin: 0;
 }
@@ -619,17 +710,52 @@ header>h2
 {
     font-size: 1.7em;
     font-family: "WorkSans-Bold";
+=======
+    font-size: 50px;
+    margin: 0;
+}
+
+#product .product-price
+{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Roboto-Thin";
+}
+
+#product .product-quantity
+{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 20px;
+    font-size: 15px;
+    font-family: "Roboto-Light";
+    border: 1px black solid;
+    padding-left: 20px;
+    padding-right: 20px;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 #product .product-buttons
 {
+<<<<<<< HEAD
     margin-top: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+=======
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    gap: 8px;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 #product .product-buttons div
 {
+<<<<<<< HEAD
     width: 95%;
     background-color: white;
     border: 2px rgb(202, 202, 202) solid;
@@ -682,11 +808,26 @@ header>h2
     font-size: 1.4em;
     font-family: "WorkSans-Bold";
     color: black;
+=======
+    font-family: "Roboto-Thin";
+    font-size: 25px;
+    border: 1px black solid;
+    width: 80%;
+    padding: 5px;
+    background: radial-gradient(circle, rgb(54, 54, 54), black);
+    color: white;
+}
+
+#product .product-buttons div a
+{
+    text-align: center;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
 
 @media (max-width: 1100px) {
     #product .product-title
     {
+<<<<<<< HEAD
         font-size: 25px;
         margin: 0;
     }
@@ -714,6 +855,24 @@ header>h2
         font-size: 20px;
         text-align: center;
         height: auto;
+=======
+        font-size: 45px;
+        font-family: 'Roboto-Bold';
+        margin: 0;
+    }
+
+    #product .product-price
+    {
+        font-size: 20px;
+        font-family: 'Roboto-Light';
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #product .product-quantity
+    {
+        margin-top: 10px;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     }
 
     #product .product-main
@@ -721,6 +880,10 @@ header>h2
         grid-row: 5;
         white-space: pre-line;
         text-align: left;
+<<<<<<< HEAD
+=======
+        font-family: 'Roboto-Thin';
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
         font-size: 15px;
     }
 }
@@ -996,7 +1159,11 @@ header>h2
     }
 }
 
+<<<<<<< HEAD
 /*Register page*/
+=======
+/*REGISTER PAGE*/
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 
 #register>.bg
 {
@@ -1161,9 +1328,22 @@ input[type="date"]::-webkit-date-and-time-value {
     background-color: whitesmoke;
 }
 
+<<<<<<< HEAD
 #privacyPolicy>.bg>.intro *
 {
     font-size: 3em;
+=======
+@media (max-width: 1150px) {
+    #privacyPolicy>.bg
+    {
+        grid-column: 1;
+    }
+}
+
+#privacyPolicy>.bg>.intro *
+{
+    font-size: 2rem;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     font-family: "WorkSans";
 }
 
@@ -1176,4 +1356,75 @@ input[type="date"]::-webkit-date-and-time-value {
 {
     justify-self: center;
     width: 80%;
+<<<<<<< HEAD
+=======
+    font-family: "WorkSans";
+    font-size: 0.9rem;
+    white-space: pre-line;
+    text-align: left;
+}
+
+#privacyPolicy>.bg>main>h2>span
+{
+    text-decoration: underline;
+}
+
+/*BROWSE PAGE*/
+
+#browse>.bg
+{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-column: 2;
+    background-color: whitesmoke;
+}
+
+@media (max-width: 1150px) {
+    #browse>.bg
+    {
+        grid-column: 1;
+    }
+}
+
+#browse>.bg>.intro *
+{
+    font-size: 2rem;
+    font-family: "WorkSans";
+}
+
+#browse>.bg>.intro
+{
+    margin: 0;
+}
+
+#browse>.bg>main
+{
+    grid-column: 1;
+    grid-row: 3;
+    gap: 1rem;
+    font-family: "WorkSans";
+}
+
+@media (min-width: 1100px) {
+    #browse>.bg>main
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1100px) {
+    #browse>.bg>main
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+}
+
+#browse>.bg>main *
+{
+    height: fit-content;
+>>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
 }
