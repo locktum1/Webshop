@@ -4,11 +4,7 @@
             <a href="{{ route('product.search') }}">Search</a>
         </li>
         <li>
-<<<<<<< HEAD
-            Browse
-=======
             <a href="{{ route('browse') }}">Browse</a>
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
         </li>
     </ul>
 </div>

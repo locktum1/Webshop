@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-=======
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     <title>Webshop</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
@@ -24,18 +20,6 @@
             <img class="downArrow" id="left" src="{{ asset('assets/arrow-down-s-fill.svg') }}" alt="Side bar">
         </div>
         <main>
-<<<<<<< HEAD
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Luffy-Mousepad.png') }}" name="Luffy Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Zoro2-Mousepad.png') }}" name="Zoro Mouse Pad" price="£24.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" name="Demon Slayer Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Luffy-Mousepad.png') }}" name="Luffy Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" name="Demon Slayer Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Luffy-Mousepad.png') }}" name="Luffy Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Zoro2-Mousepad.png') }}" name="Zoro Mouse Pad" price="£24.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/DemonSlayer-Mousepad.png') }}" name="Demon Slayer Mouse Pad" price="£19.99"></x-product>
-            <x-product route="{{ route('product') }}" src="{{ asset('assets/Luffy-Mousepad.png') }}" name="Luffy Mouse Pad" price="£19.99"></x-product>
-        </div>
-=======
             @if (isset($products) && $products->count())
             @foreach ($products as $product)
                 <x-product route="{{ route('product') }}" src='{{ asset("assets/{$product->img}") }}' name="{{ $product->name }}" price="{{ $product->price }}"></x-product>
@@ -44,7 +28,6 @@
                 <p>NO PRODUCTS FOUND!!!</p>
             @endif
 
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
         </main>
         <footer><h1>By Elliot :D</h1></footer>
     </div>

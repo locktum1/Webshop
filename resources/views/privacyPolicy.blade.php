@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-=======
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     <title>Webshop</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
@@ -21,9 +17,6 @@
             <h1>Privacy policy</h1>
         </div>
         <main>
-<<<<<<< HEAD
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Harum vel nemo ducimus deleniti ut odit corporis quos minus esse facilis, vitae impedit!<br>Eos perspiciatis mollitia deleniti porro, iusto eaque vel? lorem. </h2>
-=======
             <h2><span>1. Introduction</span>
 
                 Welcome to Webshop! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website webshop.com.
@@ -79,7 +72,6 @@
 
                 If you have any questions about this Privacy Policy, please contact us at:
                 Webshop hello@webshop.com 123 Webshop Str.</h2>
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
         </main>
         <footer><h1>By Elliot :D</h1></footer>
     </div>

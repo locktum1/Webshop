@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-=======
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     <title>Webshop</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
