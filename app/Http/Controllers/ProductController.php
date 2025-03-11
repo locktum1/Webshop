@@ -18,7 +18,7 @@ class ProductController extends Controller
             ->orWhere('description','like','%' . $request->search . '%');
         }
 
-        $products = $query->get();
+        $products = $query->paginate(9);
 
         return view('search', compact('products'));
     }

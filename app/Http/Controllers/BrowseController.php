@@ -9,7 +9,7 @@ class BrowseController extends Controller
 {
     public function Browse()
     {
-        $products = Product::all();
+        $products = Product::paginate(9);
         return view('browse',compact('products'));
     }
 }

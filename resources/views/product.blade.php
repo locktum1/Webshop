@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-=======
->>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
     <title>Webshop</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
@@ -45,7 +41,7 @@
                 </div>
                 <div class="product-buttons">
                     <div class="product-button" id="save"><a href="">Save for later</a></div>
-                    <div class="product-button" id="cart"><a href="">Add to cart</a></div>
+                    <div class="product-button" id="cart" data-id="1" data-name="Demon Slayer Mousepad" data-price="19.99"><a href="javascript:void(0);">Add to cart</a></div>
                     <div class="product-button" id="buy"><a href="">Buy now</a></div>
 >>>>>>> f46fd55 (Re-made product page, added search page, added responsive displaying of stored products in database, fixed bugs)
                 </div>
@@ -85,6 +81,36 @@
         button.addEventListener("click", () => {
             image.src = button.getAttribute("src")
         })
+    });
+
+    document.getElementById("cart").addEventListener("click", function() {
+        let productId = this.getAttribute("data-id");
+        let productName = this.getAttribute("data-name");
+        let productPrice = this.getAttribute("data-price");
+
+        let csrfToken = document.querySelector('meta[name="csrf-token"]');
+        if (!csrfToken) {
+            console.error("CSRF token meta tag is missing!");
+            return;
+        }
+
+        fetch("{{ url('/add-to-cart') }}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute("content")
+            },
+            body: JSON.stringify({
+                id: productId,
+                name: productName,
+                price: productPrice
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message);
+        })
+        .catch(error => console.error("Error:", error));
     });
 </script>
 </html>

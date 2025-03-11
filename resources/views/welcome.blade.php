@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
 <body id="index">
+    <x-cart></x-cart>
     <div class="bg">
         <header>
             <x-header></x-header>

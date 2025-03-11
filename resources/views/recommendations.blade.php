@@ -7,26 +7,21 @@
     <title>Webshop</title>
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
-<body id="browse">
+<body id="recommendations">
     <div class="bg">
         <header>
             <x-header></x-header>
         </header>
         <x-side-bar></x-side-bar>
         <div class="intro">
-            <h1>Browse</h1>
+            <h1>Your recommendations</h1>
         </div>
         <main>
+
             <div class="productContainer">
-                @if (isset($products) && $products->count())
-                @foreach ($products as $product)
-                    <x-product route="{{ route('product') }}" src='{{ asset("assets/{$product->img}") }}' name="{{ $product->name }}" price="{{ $product->price }}"></x-product>
-                @endforeach
-                @else
-                    <p>No products!</p>
-                @endif
+
             </div>
-            <div class="pagination">
+            {{-- <div class="pagination">
                 @if ($products->onFirstPage())
                         <div class="disabled">
                             <span class="prev-btn"><</span>
@@ -58,7 +53,7 @@
                             <span class="next-btn">></span>
                         </div>
                     @endif
-            </div>
+            </div> --}}
         </main>
         <footer><h1>By Elliot :D</h1></footer>
     </div>

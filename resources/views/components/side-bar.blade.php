@@ -1,7 +1,7 @@
 <div class="side-bar">
     <ul>
         <li>
-            <a href="{{ route('search') }}">Search</a>
+            <a href="{{ route('product.search') }}">Search</a>
         </li>
         <li>
 <<<<<<< HEAD

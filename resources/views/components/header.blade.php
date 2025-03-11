@@ -14,7 +14,7 @@
 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none">@csrf</form>
 
 @auth
-    <div class="cart">
-        <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="icon" id="right" href="#"><img src="{{ asset('assets/cart-line-icon.svg') }}" alt="Log in or register"></a>
+    <div class="logout">
+        <a onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="icon" id="right" href="#"><img src="{{ asset('assets/logout-box.svg') }}" alt="Log in or register"></a>
     </div>
 @endauth
